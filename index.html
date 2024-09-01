@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Carousel</title>
+    <!-- Include Google Fonts for Ruwudu and Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Include Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom stylesheet -->
+</head>
+<body>
+
+    <!-- Parallax Star Background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!-- 3D Banner Slider -->
+    <div class="banner">
+        <div class="slider animate__animated animate__fadeInUp" id="slider" style="--quantity: 9">
+            <div class="item" style="--position: 1">
+                <img src="dal.png" alt="Image 1">
+            </div>
+            <div class="item" style="--position: 2">
+                <img src="mem.png" alt="Image 2">
+            </div>
+            <div class="item" style="--position: 3">
+                <img src="tha.png" alt="Image 3">
+            </div>
+            <div class="item" style="--position: 4">
+                <img src="dal.png" alt="Image 4">
+            </div>
+            <div class="item" style="--position: 5">
+                <img src="mem.png" alt="Image 5">
+            </div>
+            <div class="item" style="--position: 6">
+                <img src="tha.png" alt="Image 6">
+            </div>
+            <div class="item" style="--position: 7">
+                <img src="dal.png" alt="Image 7">
+            </div>
+            <div class="item" style="--position: 8">
+                <img src="mem.png" alt="Image 8">
+            </div>
+            <div class="item" style="--position: 9">
+                <img src="tha.png" alt="Image 9">
+            </div>
+        </div>
+        <div class="dark-overlay"></div>
+    </div>
+
+    <!-- Title Section Below the Carousel -->
+    <header>
+        <h1 class="ruwudu-bold title">انقش اسمك بالخطوط العربية القديمة!</h1>
+    </header>
+
+    <!-- Card Containers for Input and Conversion -->
+    <div class="card-container">
+
+
+       <!-- Thamudic Converter Card -->
+<div class="card" id="thamudic-card" onclick="flipCard('thamudic-card')">
+    <div class="card-inner">
+        <div class="card-front ruwudu-semibold">الثمودية</div>
+        <div class="card-back glass-container">
+            <!-- Prevent card from flipping back on input and button click -->
+            <label for="nameInputThamudic" class="ruwudu-medium">أدخل اسمك هنا:</label>
+            <input type="text" id="nameInputThamudic" placeholder="أدخل اسمك" onclick="event.stopPropagation();">
+            <button onclick="convertName('thamudic'); event.stopPropagation();" class="ruwudu-semibold">نقش</button>
+            <div id="resultThamudic" class="ruwudu-regular result"></div>
+        </div>
+    </div>
+</div>
+       
+
+
+       <!-- Nabatanean Converter Card -->
+<div class="card" id="nabatanean-card" onclick="flipCard('nabatanean-card')">
+    <div class="card-inner">
+        <div class="card-front ruwudu-semibold">النبطية</div>
+        <div class="card-back glass-container">
+            <!-- Prevent card from flipping back on input and button click -->
+            <label for="nameInputNabatanean" class="ruwudu-medium">أدخل اسمك هنا:</label>
+            <input type="text" id="nameInputNabatanean" placeholder="أدخل اسمك" onclick="event.stopPropagation();">
+            <button onclick="convertName('nabatanean'); event.stopPropagation();" class="ruwudu-semibold">نقش</button>
+            <div id="resultNabatanean" class="ruwudu-regular result"></div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
