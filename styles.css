@@ -28,18 +28,18 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .title {
-        font-size: 30px; /* Smaller font size for mobile */
+        font-size: 25px; /* Smaller font size for mobile */
         margin: 30px 0; /* Adjust margin for mobile */
     }
     
     .banner {
-        height: 40vh; /* Reduce height of the banner for mobile */
+        height: 30vh; /* Reduce height of the banner for mobile */
     }
 
     .slider {
-        width: 300px; /* Smaller width for the carousel */
-        height: 200px; /* Smaller height for the carousel */
-        transform: rotateX(10deg); /* Adjust the rotation for smaller size */
+        width: 250px; /* Smaller width for the carousel */
+        height: 150px; /* Smaller height for the carousel */
+        transform: rotateX(5deg); /* Adjust the rotation for smaller size */
     }
     
     .card-container {
