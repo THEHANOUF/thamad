@@ -29,22 +29,31 @@ body {
 @media (max-width: 768px) {
     .title {
         font-size: 36px; /* Smaller font size for mobile */
+        margin: 30px 0; /* Adjust margin for mobile */
     }
     .slider {
-        width: 90%;
+        width: 80%;
         height: auto; /* Maintain aspect ratio */
     }
     .card-container {
         flex-direction: column; /* Stack cards vertically */
         align-items: center;
+        gap: 20px; /* Space between stacked cards */
     }
     .card {
         width: 90%;
         margin-bottom: 20px; /* Space between stacked cards */
     }
     .glass-container {
-        width: 90%;
-        padding: 20px; /* Smaller padding for mobile */
+        width: 95%;
+        padding: 15px; /* Smaller padding for mobile */
+        margin-top: 20px; /* Adjust spacing on mobile */
+    }
+    .result {
+        font-size: 20px; /* Slightly smaller font for mobile */
+    }
+}
+
 
 /* Parallax Star Background */
 #stars, #stars2, #stars3, #stars4, #stars5, #stars6, #stars7, #stars8, #stars9, #stars10, #stars11, #stars12, #stars13 {
