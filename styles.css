@@ -25,21 +25,32 @@ body {
     height: 100%;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 25px; /* Smaller font size for mobile */
-        margin: 30px 0; /* Adjust margin for mobile */
+        font-size: 24px; /* Smaller font size for the title on mobile */
+        margin: 15px 0; /* Reduced margin */
     }
-    
+
     .banner {
-        height: 30vh; /* Reduce height of the banner for mobile */
+        height: 25vh; /* Further reduce the height of the banner for mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 15px; /* Space below the banner */
     }
 
     .slider {
-        width: 250px; /* Smaller width for the carousel */
-        height: 150px; /* Smaller height for the carousel */
-        transform: rotateX(5deg); /* Adjust the rotation for smaller size */
+        width: 200px; /* Smaller width for the carousel */
+        height: 120px; /* Smaller height for the carousel */
+        transform: rotateX(3deg); /* Minimal 3D rotation for better visibility on small screens */
+    }
+
+    .slider .item {
+        width: 100%;
+        height: 100%;
+        transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(250px); /* Adjusted translateZ for smaller size */
     }
     
     .card-container {
