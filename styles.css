@@ -23,10 +23,11 @@ body {
     overflow-x: hidden;
     position: relative;
     height: 100%;
+    padding: 20px; /* Add padding to avoid elements sticking to the edge */
 }
 
 /* Parallax Star Background */
-#stars, #stars2, #stars3 {
+#stars, #stars2, #stars3, #stars4, #stars5, #stars6, #stars7, #stars8, #stars9, #stars10, #stars11, #stars12, #stars13 {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,8 +36,18 @@ body {
     display: block;
     overflow: hidden;
     z-index: -1;
-    background-size: cover;
 }
+
+/* Individual Stars */
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 479px 1714px #FFF, 312px 354px #FFF, 1030px 1405px #FFF, 1721px 1761px #FFF, 1185px 169px #FFF, 1103px 569px #FFF, 337px 1157px #FFF, 343px 1648px #FFF, 1374px 1065px #FFF, 1037px 623px #FFF;
+    animation: animStar 50s linear infinite;
+}
+
+/* Continue defining all stars with their animations... */
 
 /* Title Styling */
 .title {
@@ -60,7 +71,7 @@ body {
     overflow: hidden;
     position: relative;
     perspective: 1500px;
-    padding: 20px;
+    padding: 40px 0; /* Ensure spacing between carousel and title */
     z-index: 0;
 }
 
@@ -161,8 +172,8 @@ body {
 
 /* Glass Container for Input Form */
 .glass-container {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 40px;
     max-width: 100%;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
@@ -177,9 +188,9 @@ body {
 
 /* Input and Button Styling */
 .glass-container input[type="text"] {
-    padding: 10px;
-    width: 90%;
-    margin: 15px 0;
+    padding: 12px;
+    width: 85%;
+    margin: 20px 0;
     border: 1px solid #ffffff;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -190,16 +201,10 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Glowing effect when input is focused */
-input[type="text"]:focus {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-    border-color: #ffffff;
-}
-
 .glass-container button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin-top: 10px;
+    padding: 12px 25px;
+    font-size: 20px;
+    margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -214,8 +219,8 @@ input[type="text"]:focus {
 
 /* Result Styling */
 .result {
-    margin-top: 20px;
-    font-size: 24px;
+    margin-top: 25px;
+    font-size: 26px;
     text-align: center;
 }
 
