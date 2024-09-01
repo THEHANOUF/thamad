@@ -31,24 +31,34 @@ body {
         font-size: 30px; /* Smaller font size for mobile */
         margin: 30px 0; /* Adjust margin for mobile */
     }
-    .slider {
-        width: 70%;
-        height: auto; /* Maintain aspect ratio */
+    
+    .banner {
+        height: 40vh; /* Reduce height of the banner for mobile */
     }
+
+    .slider {
+        width: 300px; /* Smaller width for the carousel */
+        height: 200px; /* Smaller height for the carousel */
+        transform: rotateX(10deg); /* Adjust the rotation for smaller size */
+    }
+    
     .card-container {
         flex-direction: column; /* Stack cards vertically */
         align-items: center;
         gap: 20px; /* Space between stacked cards */
     }
+    
     .card {
         width: 90%;
         margin-bottom: 20px; /* Space between stacked cards */
     }
+    
     .glass-container {
         width: 95%;
         padding: 15px; /* Smaller padding for mobile */
         margin-top: 20px; /* Adjust spacing on mobile */
     }
+    
     .result {
         font-size: 20px; /* Slightly smaller font for mobile */
     }
