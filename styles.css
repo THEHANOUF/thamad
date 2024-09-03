@@ -46,6 +46,7 @@ body {
         height: 100px !important; /* Smaller height for the carousel */
         transform: rotateX(2deg) !important; /* Minimal 3D rotation for better visibility on small screens */
         animation: rotateSlider 25s infinite linear !important; /* Ensure the animation continues */
+        animation-play-state: running !important;
     }
 
     .slider .item {
