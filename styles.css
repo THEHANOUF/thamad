@@ -29,22 +29,23 @@ body {
 @media (max-width: 768px) {
     .title {
         font-size: 24px; /* Smaller font size for the title on mobile */
-        margin: 15px 0; /* Reduced margin */
+        margin: 20px 0; /* Reduced margin */
     }
 
-     .banner {
-        height: 20vh !important; /* Further reduce the height of the banner for mobile */
+      .banner {
+        height: 25vh !important; /* Reduced height of the banner for mobile */
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
         overflow: hidden !important;
-        margin-bottom: 10px !important; /* Space below the banner */
+        margin-bottom: 15px !important; /* Space below the banner */
     }
 
     .slider {
         width: 180px !important; /* Smaller width for the carousel */
         height: 100px !important; /* Smaller height for the carousel */
         transform: rotateX(2deg) !important; /* Minimal 3D rotation for better visibility on small screens */
+        animation: rotateSlider 25s infinite linear !important; /* Ensure the animation continues */
     }
 
     .slider .item {
@@ -52,6 +53,7 @@ body {
         height: 100% !important;
         transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(150px) !important; /* Closer images with reduced translateZ */
     }
+
 
     
     .card-container {
