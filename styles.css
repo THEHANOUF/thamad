@@ -47,6 +47,7 @@ body {
         transform: rotateX(2deg) !important; /* Minimal 3D rotation for better visibility on small screens */
         animation: rotateSlider 25s infinite linear !important; /* Ensure the animation continues */
         animation-play-state: running !important;
+        transform-style: preserve-3d !important; /* Preserve 3D space for children */
     }
 
     .slider .item {
@@ -76,6 +77,16 @@ body {
     
     .result {
         font-size: 20px; /* Slightly smaller font for mobile */
+    }
+}
+
+/* Ensure Animation Keyframes */
+@keyframes rotateSlider {
+    from {
+        transform: rotateY(0deg) rotateX(2deg); /* Start position */
+    }
+    to {
+        transform: rotateY(360deg) rotateX(2deg); /* Full rotation */
     }
 }
 
