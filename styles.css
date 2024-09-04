@@ -33,7 +33,7 @@ body {
     }
 
 .banner {
-    height: 35vh !important;
+    height: 60vh !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
