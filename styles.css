@@ -32,29 +32,42 @@ body {
         margin: 20px 0; /* Reduced margin */
     }
 
-      .banner {
-        height: 25vh !important; /* Reduced height of the banner for mobile */
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        overflow: hidden !important;
-        margin-bottom: 15px !important; /* Space below the banner */
-    }
+.banner {
+    height: 35vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    position: relative !important;
+    margin-bottom: 25px !important; /* Space below the banner */
+    z-index: 0;
+}
 
-    .slider {
-        width: 180px !important; /* Smaller width for the carousel */
-        height: 100px !important; /* Smaller height for the carousel */
-        transform: rotateX(2deg) !important; /* Minimal 3D rotation for better visibility on small screens */
-        animation: rotateSlider 25s infinite linear !important; /* Ensure the animation continues */
-        animation-play-state: running !important;
-        transform-style: preserve-3d !important; /* Preserve 3D space for children */
-    }
+.slider {
+    width: 200px;
+    height: 100px !important;
+    position: relative !important;
+    transform-style: preserve-3d !important;
+    transform: rotateX(15deg);
+    animation: rotateSlider 25s infinite linear !important;
+    z-index: 2;
+}
 
-    .slider .item {
-        width: 100% !important;
-        height: 100% !important;
-        transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(150px) !important; /* Closer images with reduced translateZ */
-    }
+.slider .item {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(450px);
+    transition: transform 1s !important;
+}
+
+.slider .item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    filter: sepia(30%) contrast(1.2) brightness(0.7) !important;
+    transition: transform 0.5s ease, filter 0.5s ease !important;
+}
 
 
     
