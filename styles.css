@@ -28,8 +28,8 @@ body {
 /* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 35px !important; /* Smaller font size for the title on mobile */
-        margin: 25px 0 !importanat; /* Reduced margin */
+        font-size: 25px !important; /* Smaller font size for the title on mobile */
+        margin: 20px 0 !importanat; /* Reduced margin */
     }
 
      .slider {
