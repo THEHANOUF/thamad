@@ -93,6 +93,24 @@
     </div>
 </div>
 
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.getElementById('slider');
+
+    // Force reflow to make sure animation starts
+    slider.style.animation = 'none'; // Temporarily stop the animation
+    slider.offsetHeight; // Trigger a reflow, flushing the CSS changes
+    slider.style.animation = ''; // Restart the animation
+
+    // Handle orientation change
+    window.addEventListener('orientationchange', function() {
+        slider.style.animation = 'none';
+        slider.offsetHeight; // Trigger a reflow
+        slider.style.animation = ''; // Restart the animation
+    });
+});
+</script>
+
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
