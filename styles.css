@@ -33,15 +33,15 @@ body {
     }
 
 .banner {
-    height: 60vh !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    overflow: hidden !important;
-    position: relative !important;
-    margin-bottom: 25px !important; /* Space below the banner */
-    z-index: 0;
-}
+        height: 35vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: hidden !important;
+        position: relative !important;
+        margin-bottom: 25px !important; /* Space below the banner */
+        z-index: 0;
+    }
 
 .slider {
     width: 200px;
