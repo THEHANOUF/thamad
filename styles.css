@@ -32,27 +32,10 @@ body {
         margin: 30px 0 !importanat; /* Reduced margin */
     }
 
-    .banner {
-        height: 25vh !important; /* Further reduce the height of the banner for mobile */
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        overflow: hidden !important;
-        margin-bottom: 15px !important; /* Space below the banner */
+     .slider {
+        width: 80%;
+        height: auto;
     }
-
-    .slider {
-        width: 200px !important; /* Smaller width for the carousel */
-        height: 120px !important; /* Smaller height for the carousel */
-        transform: rotateX(3deg) !important; /* Minimal 3D rotation for better visibility on small screens */
-    }
-
-    .slider .item {
-        width: 100% !important;
-        height: 100% !important;
-        transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(250px); /* Adjusted translateZ for smaller size */
-    }
-
 
     
     .card-container {
