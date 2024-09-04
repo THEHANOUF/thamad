@@ -54,20 +54,23 @@ body {
 }
 
 .slider .item {
-    position: absolute;
-    width: 100% !important;
-    height: 100% !important;
-    transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(450px);
-    transition: transform 1s !important;
-}
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        transform: rotateY(calc(360deg / var(--quantity) * (var(--position) - 1))) translateZ(200px); /* Increased translateZ for proper spacing */
+        transition: transform 1s !important;
+        backface-visibility: hidden; /* Hide back faces of the items */
+        overflow: visible; /* Ensure no content is cut off */
+    }
 
-.slider .item img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    filter: sepia(30%) contrast(1.2) brightness(0.7) !important;
-    transition: transform 0.5s ease, filter 0.5s ease !important;
-}
+    .slider .item img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; /* Ensures the image covers the entire item */
+        filter: sepia(30%) contrast(1.2) brightness(0.7) !important;
+        transition: transform 0.5s ease, filter 0.5s ease !important;
+        overflow: visible; /* Make sure image content is not hidden */
+    }
 
 
     
