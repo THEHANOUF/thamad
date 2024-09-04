@@ -28,8 +28,8 @@ body {
 /* Responsive Adjustments for Mobile */
 @media (max-width: 768px) {
     .title {
-        font-size: 24px; /* Smaller font size for the title on mobile */
-        margin: 20px 0; /* Reduced margin */
+        font-size: 24px !important; /* Smaller font size for the title on mobile */
+        margin: 20px 0 !importanat; /* Reduced margin */
     }
 
 .banner {
